@@ -10,8 +10,8 @@ export default defineConfig({
   plugins: [react(), tsconfigPaths()],
   build: {
     outDir: '../dist',
-    rollupOptions: {
-      input: path.join(__dirname, 'src/index.html'),
-    },
+  },
+  server: {
+    open: 'index-dev.html',
   },
 })
